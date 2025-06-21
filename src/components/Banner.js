@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Frontend Developer","Web Developer"];
+  const toRotate = [ "Shopify Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Raghu`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Frontend Developer", "eb developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Raghu`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Shopify Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I' m a  developer. I love combining the worlds of logic and creative design to make eye-catching, acessible, and user-friendly websites and applications. I design and code beautifully simple things, and I love what I do.</p>
                   <span className="rs-btn">
                     <a
