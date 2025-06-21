@@ -62,7 +62,7 @@ export const Banner = () => {
                   <p>I' m a  developer. I love combining the worlds of logic and creative design to make eye-catching, acessible, and user-friendly websites and applications. I design and code beautifully simple things, and I love what I do.</p>
                   <span className="rs-btn">
                     <a
-                    href='./Raghu_resume.pdf'
+                    href='./Raghu-new-jouney.pdf'
                     download={true}
                     target="_blank"
                     rel="noreferrer"
