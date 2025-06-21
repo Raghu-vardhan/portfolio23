@@ -67,7 +67,7 @@ export const Banner = () => {
                     target="_blank"
                     rel="noreferrer"
                     >
-                    Download Resume
+                    Download Resumes
                     </a>
                   </span>
               </div>}
