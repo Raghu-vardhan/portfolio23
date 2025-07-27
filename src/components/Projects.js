@@ -1,9 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import streamit from "../assets/img/streamit.jpg";
+import bhavaearth from "../assets/img/bhavaearth.png";
 import fitclub from "../assets/img/fitclub.jpg";
 import ecomm from "../assets/img/ecomm.JPG";
 import blogs from "../assets/img/blogs.JPG";
+import holoman from "../assets/img/holoman.png";
+import rithyam from "../assets/img/rithyam.png";
+import lumora from "../assets/img/lumora.png";
+import libuna from "../assets/img/libuna.png";
+import kyndskin from "../assets/img/kyndskin.png";
+import mingo from "../assets/img/mingo.png";
+import gonutriline from "../assets/img/gonutriline.png";
 import colorsharp2 from "../assets/img/color-sharp2.png";
 import cals from "../assets/img/cals.JPG";
 import clock from  "../assets/img/clock.JPG"
@@ -16,18 +23,57 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "streamit-clone",
-      description: "Movie website features with play movies ",
-      imgUrl: streamit,
-      stack:' Stack : Html| Css | Javascript | React',
-      demo:'https://streamit2.netlify.app/',
-      git:'https://github.com/Raghu-vardhan/Netflix-clone.git'
+      title: "BhavaEarth",
+      description: "BhavaEarth Offers healthy, organic, and natural products for your daily needs.",
+      imgUrl: bhavaearth,
+      demo:'https://www.bhavaearth.com/',
+    },
+     {
+      title: "Holoman",
+      description: "Holoman clothing brand offers a wide range of stylish and comfortable clothing options",
+      imgUrl: holoman,
+      demo:'https://www.holoman.in/',
+    },
+    {
+      title: "Rithyam",
+      description: "Rithyam jewellery brand offers classic gold and diamond jewellery",
+      imgUrl: rithyam,
+      demo:'https://www.rityamjewels.com/',
+    },
+     {
+      title: "Lumora",
+      description: "Lumora is a soluation for all your beauty needs",
+      imgUrl: lumora,
+      demo:'https://lumoracare.com/',
+    },
+    {
+      title: "Libunahygiene",
+      description: "libunahygiene is a hygiene brnad  offering period pads and other hygiene products",
+      imgUrl: libuna,
+      demo:'https://libunahygiene.com/',
+    },
+    {
+      title: "Gonutriline",
+      description: "gonutriline is a nutrition brand offering health supplements with suplement medicine",
+      imgUrl: gonutriline,
+      demo:'https://libunahygiene.com/',
+    },
+     {
+      title: "Mingo",
+      description: "mingo is a nutrition brand offering health supplements with suplement medicine",
+      imgUrl: mingo,
+      demo:'https://heymingo.com/',
+    },
+    {
+      title: "Kyndskin",
+      description: "Skincare brand offering a wide range of skincare products with natural ingredients",
+      imgUrl: kyndskin,
+      demo:'https://kyndskinn.com/',
     },
     {
       title: "fitclub bussiness-web",
       description: "fitclub website with fully responsive for small bussiness websites",
       imgUrl: fitclub,
-      stack:' Stack : Html| Css | Javascript | React',
       demo:'https://fitclubweb1.netlify.app/',
       git:'https://github.com/Raghu-vardhan/Fit-Club_responive-web.git'
     },
@@ -83,15 +129,59 @@ export const Projects = () => {
   ];
 
   const React = [
-    {
-      title: "streamit-clone",
-      description: "Movie website features with play movies ",
-      imgUrl: streamit,
-      stack:' Stack : Html| Css | Javascript | React',
-      demo:'https://streamit2.netlify.app/',
-      git:'https://github.com/Raghu-vardhan/Netflix-clone.git'
+    
+   {
+      title: "BhavaEarth",
+      description: "BhavaEarth Offers healthy, organic, and natural products for your daily needs.",
+      imgUrl: bhavaearth,
+      demo:'https://www.bhavaearth.com/',
+    },
+     {
+      title: "Holoman",
+      description: "Holoman clothing brand offers a wide range of stylish and comfortable clothing options",
+      imgUrl: holoman,
+      demo:'https://www.holoman.in/',
     },
     {
+      title: "Rithyam",
+      description: "Rithyam jewellery brand offers classic gold and diamond jewellery",
+      imgUrl: rithyam,
+      demo:'https://www.rityamjewels.com/',
+    },
+     {
+      title: "Lumora",
+      description: "Lumora is a soluation for all your beauty needs",
+      imgUrl: lumora,
+      demo:'https://lumoracare.com/',
+    },
+    {
+      title: "Libunahygiene",
+      description: "libunahygiene is a hygiene brnad  offering period pads and other hygiene products",
+      imgUrl: libuna,
+      demo:'https://libunahygiene.com/',
+    },
+    {
+      title: "Gonutriline",
+      description: "gonutriline is a nutrition brand offering health supplements with suplement medicine",
+      imgUrl: gonutriline,
+      demo:'https://libunahygiene.com/',
+    },
+     {
+      title: "Mingo",
+      description: "mingo is a nutrition brand offering health supplements with suplement medicine",
+      imgUrl: mingo,
+      demo:'https://heymingo.com/',
+    },
+    {
+      title: "Kyndskin",
+      description: "Skincare brand offering a wide range of skincare products with natural ingredients",
+      imgUrl: kyndskin,
+      demo:'https://kyndskinn.com/',
+    },
+  ]
+
+  const Javascript = [
+     {
       title: "fitclub bussiness-web",
       description: "fitclub website with fully responsive for small bussiness websites",
       imgUrl: fitclub,
@@ -115,9 +205,6 @@ export const Projects = () => {
       demo:'https://ecommernce-rvv.netlify.app/',
       git:'https://github.com/Raghu-vardhan/Ecommerance-app.git'
     },
-  ]
-
-  const Javascript = [
     {
       title: "Simple Calculator",
       description: "Basic calculator with fully responsive",
@@ -169,10 +256,10 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">All</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second"> React</Nav.Link>
+                      <Nav.Link eventKey="second"> Shopify Brands</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Javascript</Nav.Link>
+                      <Nav.Link eventKey="third">personal</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -184,6 +271,7 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
+                                target="_blank" rel="noopener noreferrer"
                                 />
                             )
                           })
