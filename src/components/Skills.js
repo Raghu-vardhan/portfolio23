@@ -40,26 +40,26 @@ export const Skills = () => {
                         
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={html} alt="Image" />
+                                <img src={html} alt="logo" />
                             </div>
                             <div className="item">
-                                <img src={css} alt="Image" />
+                                <img src={css} alt="no" />
                             </div>
                             <div className="item">
-                                <img src={javascript} alt="Image" />
+                                <img src={javascript} alt="no" />
                             </div>
                             <div className="item">
-                                <img src={react} alt="Image" />
+                                <img src={react} alt="no" />
                             </div>
                             <div className="item">
-                                <img src={github} alt="Image" />
+                                <img src={github} alt="no " />
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="no " />
     </section>
   )
 }

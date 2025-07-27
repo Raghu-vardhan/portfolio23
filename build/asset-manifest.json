@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ba72cb0.css",
-    "main.js": "/static/js/main.f8ad617f.js",
+    "main.js": "/static/js/main.be7ae131.js",
     "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/fitclub.jpg": "/static/media/fitclub.e57e891448aef2eb37f8.jpg",
@@ -31,10 +31,10 @@
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/index.html",
     "main.8ba72cb0.css.map": "/static/css/main.8ba72cb0.css.map",
-    "main.f8ad617f.js.map": "/static/js/main.f8ad617f.js.map"
+    "main.be7ae131.js.map": "/static/js/main.be7ae131.js.map"
   },
   "entrypoints": [
     "static/css/main.8ba72cb0.css",
-    "static/js/main.f8ad617f.js"
+    "static/js/main.be7ae131.js"
   ]
 }

@@ -1,6 +1,6 @@
-import { Col, Row, Alert } from "react-bootstrap";
+import { Col  } from "react-bootstrap";
 
-export const Newsletter = ({  }) => {
+export const Newsletter = () => {
   
 
   return (

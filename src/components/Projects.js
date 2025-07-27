@@ -4,7 +4,6 @@ import streamit from "../assets/img/streamit.jpg";
 import fitclub from "../assets/img/fitclub.jpg";
 import ecomm from "../assets/img/ecomm.JPG";
 import blogs from "../assets/img/blogs.JPG";
-import colorsharp from "../assets/img/color-sharp.png";
 import colorsharp2 from "../assets/img/color-sharp2.png";
 import cals from "../assets/img/cals.JPG";
 import clock from  "../assets/img/clock.JPG"
@@ -226,7 +225,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorsharp2}></img>
+      <img className="background-image-right" src={colorsharp2} alt="no"></img>
     </section>
   )
 }

@@ -1,31 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import rvimg from "../assets/img/rvimg.JPG";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "Shopify Developer"];
   const period = 2000;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  // ✅ Memoize the rotating text array
+  const toRotate = useMemo(() => ["Shopify Developer"], []);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+  // ✅ Memoized function to handle typing animation
+  const tick = useCallback(() => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
@@ -35,19 +30,21 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
+      setLoopNum(prev => prev + 1);
       setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  }, [loopNum, isDeleting, text, toRotate, period]);
 
-  
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => clearInterval(ticker);
+  }, [tick, delta]);
 
   return (
     <section className="banner" id="home">
@@ -56,33 +53,44 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Raghu`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Shopify Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I' m a  developer. I love combining the worlds of logic and creative design to make eye-catching, acessible, and user-friendly websites and applications. I design and code beautifully simple things, and I love what I do.</p>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi! I'm Raghu `}
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Shopify Developer" ]'>
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    I’m a developer. I love combining the worlds of logic and creative design to make eye-catching,
+                    accessible, and user-friendly websites and applications. I design and code beautifully simple things,
+                    and I love what I do.
+                  </p>
                   <span className="rs-btn">
                     <a
-                    href='./Raghu-new-jouney.pdf'
-                    download={true}
-                    target="_blank"
-                    rel="noreferrer"
+                      href="./Raghu-new-jouney.pdf"
+                      download={true}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                    Download Resumes
+                      Download Resume
                     </a>
                   </span>
-              </div>}
+                </div>
+              }
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img  src={rvimg}  alt="Header Img" style={{'border-radius':'80%'}} />
-                </div>}
+                  <img src={rvimg} alt="Profile" style={{ borderRadius: '80%' }} />
+                </div>
+              }
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
