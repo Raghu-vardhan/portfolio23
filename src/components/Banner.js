@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import rvimg from "../assets/img/rvimg.JPG";
+import Raghu from "../assets/img/Raghu.pdf";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -66,7 +67,7 @@ export const Banner = () => {
                   </p>
                   <span className="rs-btn">
                     <a
-                      href="./Raghu-new-jouney.pdf"
+                      href={Raghu}
                       download={true}
                       target="_blank"
                       rel="noreferrer"
