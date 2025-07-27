@@ -133,8 +133,10 @@ span.navbar-text {
     align-items: center;
 }
 .social-icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin-left: 14px;
+    gap: .3em;
 }
 .social-icon a {
     width: 42px;
@@ -628,4 +630,14 @@ footer img {
 
 .margin{
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+ .project .nav.nav-pills{
+    width: 100%
+    ;
+ }
+.project .nav.nav-pills .nav-link{
+  font-size: 12px;
+}
 }
