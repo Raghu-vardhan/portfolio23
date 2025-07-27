@@ -62,9 +62,7 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    I’m a developer. I love combining the worlds of logic and creative design to make eye-catching,
-                    accessible, and user-friendly websites and applications. I design and code beautifully simple things,
-                    and I love what I do.
+                   I'm a Shopify Developer with 1.5+ years of hands-on experience crafting clean, conversion-focused eCommerce websites. I love merging logic with creativity to build responsive, user-friendly, and visually appealing Shopify stores. From coding custom themes in Liquid to setting up campaigns, free gifts, and checkout integrations, I enjoy turning business needs into smooth, high-performing online experiences. I also handle CRO tweaks and quick fixes with ease—collaborating closely with marketing and design teams to deliver results that make an impact.
                   </p>
                   <span className="rs-btn">
                     <a
