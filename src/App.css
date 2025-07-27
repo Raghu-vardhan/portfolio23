@@ -296,7 +296,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
-  
+  border-radius: 20px;
 }
 
 .banner .rs-btn :hover {
@@ -640,5 +640,11 @@ footer img {
 .project .nav.nav-pills .nav-link,.navbar-text button{
   font-size: 12px;
   padding: 10px;
+}
+.animate__zoomIn{
+  margin-top: 3em;
+}
+.banner p,.banner .rs-btn a{
+  font-size: 14px;
 }
 }
