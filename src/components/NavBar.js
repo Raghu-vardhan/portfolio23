@@ -48,10 +48,10 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/raghu-vardhan14/"><img src={navIcon1} alt="" /></a>
-                <a href="https://github.com/Raghu-vardhan"><img src={github} alt="" /></a>
-                 <a href="tel:+919573904790" style={{ color: 'white'}}><img style={{ width: '55%'}} src={phone} alt="Phone Icon" /></a>
-                <a href="mailto:rvraghu14@gmail.com" style={{'color':'white'}}><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/raghu-vardhan14/" target="_blank" ><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/Raghu-vardhan" target="_blank"><img src={github} alt="" /></a>
+                 <a href="tel:+919573904790" style={{ color: 'white'}} target="_blank"><img style={{ width: '55%'}} src={phone} alt="Phone Icon" /></a>
+                <a href="mailto:rvraghu14@gmail.com" style={{'color':'white'}} target="_blank"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connects</span></button>
