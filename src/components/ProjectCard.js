@@ -10,7 +10,7 @@ export const ProjectCard = ({ title, description, imgUrl,stack,demo,git}) => {
           <span>{description}<br/>{stack}<br/>
           </span>
           <div className="links-btn">
-          <a target="_blank"  rel="noreferrer" href={demo}>Demo</a> </div>
+          <a  target="_blank"  rel="noreferrer" href={demo}>Demo</a> </div>
           
         </div>
       </div>
