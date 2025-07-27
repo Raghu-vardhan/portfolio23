@@ -637,7 +637,8 @@ footer img {
     width: 100%
     ;
  }
-.project .nav.nav-pills .nav-link{
+.project .nav.nav-pills .nav-link,.navbar-text button{
   font-size: 12px;
+  padding: 10px;
 }
 }
