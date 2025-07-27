@@ -56,7 +56,7 @@ export const Projects = () => {
       title: "Gonutriline",
       description: "gonutriline is a nutrition brand offering health supplements with suplement medicine",
       imgUrl: gonutriline,
-      demo:'https://libunahygiene.com/',
+      demo:'https://gonutriline.com/',
     },
      {
       title: "Mingo",
@@ -164,7 +164,7 @@ export const Projects = () => {
       title: "Gonutriline",
       description: "gonutriline is a nutrition brand offering health supplements with suplement medicine",
       imgUrl: gonutriline,
-      demo:'https://libunahygiene.com/',
+      demo:'https://gonutriline.com/',
     },
      {
       title: "Mingo",
