@@ -62,7 +62,7 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                   I'm a Shopify Developer with 1.5+ years of hands-on experience crafting clean, conversion-focused eCommerce websites. I love merging logic with creativity to build responsive, user-friendly, and visually appealing Shopify stores. From coding custom themes in Liquid to setting up campaigns, free gifts, and checkout integrations, I enjoy turning business needs into smooth, high-performing online experiences. I also handle CRO tweaks and quick fixes with ease—collaborating closely with marketing and design teams to deliver results that make an impact.
+                   I'm a Shopify Developer with 1.5+ years of experience building responsive, user-friendly, and conversion-focused eCommerce stores. I enjoy combining logic and design—customizing themes, setting up campaigns, free gifts, checkout flows, and handling CRO changes. I work closely with marketing and design teams to deliver clean, high-performing Shopify experiences.
                   </p>
                   <span className="rs-btn">
                     <a

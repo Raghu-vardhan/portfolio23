@@ -1,5 +1,5 @@
 import html from "../assets/img/html.png";
-import react from "../assets/img/react.png";
+import shopify from "../assets/img/shopify.png";
 import css from "../assets/img/css.png";
 import javascript from "../assets/img/javascript.png";
 import github from "../assets/img/github.png";
@@ -39,6 +39,7 @@ export const Skills = () => {
                         <h2>Skills</h2>
                         
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                           
                             <div className="item">
                                 <img src={html} alt="logo" />
                             </div>
@@ -49,7 +50,7 @@ export const Skills = () => {
                                 <img src={javascript} alt="no" />
                             </div>
                             <div className="item">
-                                <img src={react} alt="no" />
+                                <img src={shopify} alt="logo" />
                             </div>
                             <div className="item">
                                 <img src={github} alt="no " />
